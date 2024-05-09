@@ -30,7 +30,8 @@ Your feedback is invaluable in helping improve Suika Dungeon. Whether you have p
 
 ## Credits
 
-- **Sprite Art**: Monster sprites created by [0x72](https://0x72.itch.io/dungeontileset-ii).
+- **Tileset**: Tileset art created by Some Pizzar Art
+- **Sprite Art**: Monster sprites created by [0x72](https://0x72.itch.io/dungeontileset-ii), other sprites by Artisan.
 - **Godot Engine**: [Godot Engine](https://godotengine.org/) used to develop Suika Dungeon.
 
 ## License
