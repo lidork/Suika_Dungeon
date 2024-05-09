@@ -10,8 +10,8 @@ Suika Dungeon is a Suika game clone created in Godot. It presents a unique twist
 
 ## Screenshots
 
-![Screenshot 1](https://i.imgur.com/Cg7CQ4a.png)
-![Screenshot 2](https://i.imgur.com/CJ5hKJw.png)
+<img src="https://i.imgur.com/Cg7CQ4a.png" width="320" height="180">
+<img src="https://i.imgur.com/CJ5hKJw.png" width="320" height="180">
 
 ## Playing the game
 
