@@ -8,6 +8,10 @@ Suika Dungeon is a Suika game clone created in Godot. It presents a unique twist
 - **Engaging Gameplay**: Enjoy challenging puzzles and strategic monster combinations.
 - **Feedback Welcome**: This is the developer's second game project, and feedback, bug reports, and suggestions are highly encouraged to improve the game.
 
+## Screenshots
+
+![Screenshot 1](https://i.imgur.com/Cg7CQ4a.png)
+![Screenshot 2](https://i.imgur.com/CJ5hKJw.png)
 
 ## Playing the game
 
