@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://xswqjtmixxqd"]
+
+[ext_resource type="Script" path="res://Scenes/board.gd" id="1_kc3oj"]
+[ext_resource type="PackedScene" uid="uid://cn63p5knusmb8" path="res://Scenes/Monsters/monster.tscn" id="3_843tu"]
+[ext_resource type="PackedScene" uid="uid://dnw5nev5mdb7a" path="res://Scenes/wall.tscn" id="4_b4iip"]
+[ext_resource type="Texture2D" uid="uid://d0puqly4vnvmr" path="res://Graphics/Big_Demon_Sprite.png" id="4_u0wlj"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_kc3oj")
+Monster1 = ExtResource("3_843tu")
+
+[node name="Wall" parent="." instance=ExtResource("4_b4iip")]
+position = Vector2(153, 393)
+
+[node name="Wall2" parent="." instance=ExtResource("4_b4iip")]
+position = Vector2(373, 381)
+rotation = 4.71239
+scale = Vector2(1.89, 1.65)
+
+[node name="Wall3" parent="." instance=ExtResource("4_b4iip")]
+position = Vector2(493, 394)
+
+[node name="Monsters" type="Node2D" parent="."]
+
+[node name="Next_sprite" type="Sprite2D" parent="."]
+position = Vector2(558, 55)
+texture = ExtResource("4_u0wlj")
+
+[node name="Next" type="TextEdit" parent="."]
+light_mask = 0
+texture_filter = 1
+offset_left = 531.0
+offset_top = -1.0
+offset_right = 585.0
+offset_bottom = 36.0
+text = "Next"
+editable = false
+context_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+caret_move_on_right_click = false
+caret_multiple = false
+
+[node name="Fusion_timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 0.1
+one_shot = true
+
+[node name="Spawn_timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 0.1
+one_shot = true

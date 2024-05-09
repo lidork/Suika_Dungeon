@@ -1,0 +1,13 @@
+res://Scenes/board.tscn
+res://Scenes/Monsters/Monster.gd
+res://Scenes/board.gd
+res://Scenes/tile_set.tres
+res://Scenes/Monsters/monster.tscn
+res://Scenes/wall.tscn
+res://Scenes/Monsters/explosion_particles.tscn
+res://Scenes/audio_manager.tscn
+res://Scenes/player.tscn
+res://Scenes/fail_area.tscn
+res://Scenes/menu.tscn
+res://Scenes/Credits.tscn
+res://Scenes/pause_menu.tscn

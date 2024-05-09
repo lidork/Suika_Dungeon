@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://3rom3q1gx1vj"]
+
+[ext_resource type="Script" path="res://Scenes/player.gd" id="1_d0gii"]
+[ext_resource type="Texture2D" uid="uid://cnstjpw48j08m" path="res://Graphics/wizzard_m_idle_anim_f3.png" id="1_rg3os"]
+[ext_resource type="Texture2D" uid="uid://g03vcx73puu4" path="res://Graphics/Clouds V2.png" id="2_3pgd8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ourtf"]
+size = Vector2(14, 18)
+
+[node name="Player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_d0gii")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_ourtf")
+disabled = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-5, 11)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_3pgd8")
+region_enabled = true
+region_rect = Rect2(81, 24, 30, 20)
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(3, 12)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_3pgd8")
+region_enabled = true
+region_rect = Rect2(81, 24, 30, 20)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -4)
+texture = ExtResource("1_rg3os")

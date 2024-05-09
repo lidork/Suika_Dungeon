@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://0p131pyt0o53"]
+
+[ext_resource type="Texture2D" uid="uid://bhdidd36w2o7i" path="res://Graphics/62_minion_1_xxx.png" id="1_dd5jf"]
+[ext_resource type="Script" path="res://Scenes/Monsters/small_slime.gd" id="1_mk6wc"]
+[ext_resource type="PackedScene" uid="uid://cynwod40jwjq3" path="res://Scenes/Monsters/Big_slime.tscn" id="2_5hhf1"]
+
+[node name="Small_Slime" type="RigidBody2D" groups=["small_slime"]]
+max_contacts_reported = 10
+contact_monitor = true
+script = ExtResource("1_mk6wc")
+next = ExtResource("2_5hhf1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dd5jf")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-12, -52, 8, -52, 8, -48, 16, -48, 16, -44, 24, -44, 24, -40, 28, -40, 28, -37, 28, -36, 32, -36, 32, -32, 44, -32, 44, -28, 48, -28, 48, -24, 52, -24, 52, -20, 56, -20, 56, -8, 52, -8, 52, -4, 48, -4, 48, 4, 52, 4, 52, 20, 56, 20, 56, 36, 60, 36, 60, 40, 64, 40, 64, 52, 60, 52, 60, 56, 56, 56, 56, 60, 44, 60, 44, 64, -44, 64, -44, 60, -56, 60, -56, 56, -60, 56, -60, 52, -64, 52, -64, 40, -60, 40, -60, 36, -56, 36, -56, 20, -52, 20, -52, 4, -48, 4, -48, -8, -44, -8, -44, -16, -40, -16, -40, -20, -44, -20, -44, -24, -48, -24, -48, -36, -44, -36, -44, -40, -40, -40, -40, -44, -36, -44, -36, -48, -24, -48, -24, -44, -20, -44, -20, -48, -12, -48)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
